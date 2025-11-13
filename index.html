@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playlist</title>
+    <link rel="stylesheet" href="style.css">
+    </head>
+<body>
+
+    <div class="background-glass">
+        <div class="circle-1"></div>
+        <div class="circle-2"></div>
+    </div>
+
+    <div class="glass-container music-player">
+        
+        <header class="player-header">
+            <h1>Playlist</h1>
+            <div class="upload-area">
+                <button id="uploadButton" **onclick="document.getElementById('fileInput').click();"**>
+                     Tải Bài Hát Lên
+                </button>
+                <input type="file" id="fileInput" accept="audio/*" multiple style="display: none;">
+
+            </div>
+        </header>
+
+        <div class="track-control-section glass-element">
+            
+            <audio id="audioPlayer" controls></audio>
+            
+            <div class="current-track-info">
+                Đang phát: <span id="currentTrackName">Chưa có bài hát nào được chọn</span>
+            </div>
+            
+        </div>
+        
+        <div class="playlist-section glass-element">
+            <h2>Danh sách phát</h2>
+            <div class="playlist-container">
+                <ul id="playlist">
+                    </ul>
+                <p id="noSongsMessage">Hãy tải bài hát lên để bắt đầu!</p>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
